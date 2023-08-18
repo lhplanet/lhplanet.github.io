@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-15351ca8\",\"path\":\"/02-database/02-jdbc/05-%E6%9F%A5%E8%AF%A2%EF%BC%88PreparedStatement%E7%89%88%EF%BC%89%E8%A7%A3%E5%86%B3SQL%E6%B3%A8%E5%85%A5%E9%97%AE%E9%A2%98.html\",\"title\":\"05-查询（PreparedStatement版）解决SQL注入问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"05-查询（PreparedStatement版）解决SQL注入问题\",\"date\":\"2023-08-16T23:41:08.000Z\",\"description\":\"一、解决 SQL 注入问题 只要用户提供的信息不参与 SQL 语句的编译过程，问题就解决了。即使用户提供的信息中含有 SQL 语句的关键字，但是没有参与编译，不起作用。要想用户信息不参与 SQL 语句的编译，必须使用 java.sql.preparedStatement。 PreparedStatement 接口继承了 java.sql.Stateme...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://vuepress-theme-hope-docs-demo.netlify.app/02-database/02-jdbc/05-%E6%9F%A5%E8%AF%A2%EF%BC%88PreparedStatement%E7%89%88%EF%BC%89%E8%A7%A3%E5%86%B3SQL%E6%B3%A8%E5%85%A5%E9%97%AE%E9%A2%98.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"零号星球图书馆\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"05-查询（PreparedStatement版）解决SQL注入问题\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"一、解决 SQL 注入问题 只要用户提供的信息不参与 SQL 语句的编译过程，问题就解决了。即使用户提供的信息中含有 SQL 语句的关键字，但是没有参与编译，不起作用。要想用户信息不参与 SQL 语句的编译，必须使用 java.sql.preparedStatement。 PreparedStatement 接口继承了 java.sql.Stateme...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"LHP\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2023-08-16T23:41:08.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"05-查询（PreparedStatement版）解决SQL注入问题\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2023-08-16T23:41:08.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"LHP\\\",\\\"url\\\":\\\"http://152.136.173.53:8090/\\\"}]}\"]]},\"headers\":[{\"level\":2,\"title\":\"一、解决 SQL 注入问题\",\"slug\":\"一、解决-sql-注入问题\",\"link\":\"#一、解决-sql-注入问题\",\"children\":[]},{\"level\":2,\"title\":\"二、代码\",\"slug\":\"二、代码\",\"link\":\"#二、代码\",\"children\":[]},{\"level\":2,\"title\":\"三、对比 Statement 和 PreparedStatement\",\"slug\":\"三、对比-statement-和-preparedstatement\",\"link\":\"#三、对比-statement-和-preparedstatement\",\"children\":[]},{\"level\":2,\"title\":\"四、什么情况必须使用 Statement\",\"slug\":\"四、什么情况必须使用-statement\",\"link\":\"#四、什么情况必须使用-statement\",\"children\":[]}],\"git\":{},\"readingTime\":{\"minutes\":2.99,\"words\":898},\"filePathRelative\":\"02-database/02-jdbc/05-查询（PreparedStatement版）解决SQL注入问题.md\",\"localizedDate\":\"2023年8月17日\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
