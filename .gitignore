@@ -1,4 +1,6 @@
 /.temp/
+.temp/
+
 node_modules/
 src/.vuepress/.cache/
 src/.vuepress/.temp/
