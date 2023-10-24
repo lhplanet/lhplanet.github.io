@@ -45,17 +45,7 @@ docker version
 
 查看Docker概要信息：
 
-```Shell
-docker info
-```
 
-查看Docker总体帮助文档：
-
-查看docker具体命令帮助文档：
-
-```Shell
-docker 具体命令 --help
-```
 
 ## 镜像命令
 
