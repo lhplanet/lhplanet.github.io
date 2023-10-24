@@ -1,5 +1,10 @@
 ---
 title: 04-Docker常用命令
+date: 2023-10-24 10:07:57
+---
+
+---
+title: 04-Docker常用命令
 date: 2023-10-24 08:50:16
 ---
 
@@ -185,3 +190,5 @@ source /usr/share/bash-completion/bash_completion
 # 如果镜像中有ubuntu，查看输入ub按下tab是否可以补全
 docker run ub
 ```
+
+
