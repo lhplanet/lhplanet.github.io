@@ -51,10 +51,6 @@ docker info
 
 查看Docker总体帮助文档：
 
-```Shell
-docker --help
-```
-
 查看docker具体命令帮助文档：
 
 ```Shell
