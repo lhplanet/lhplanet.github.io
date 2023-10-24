@@ -37,15 +37,19 @@ systemctl enable docker
 
 ## 帮助类命令
 
-查看Docker版本：
-
 ```Shell
+# 查看Docker版本：
 docker version
+
+# 查看Docker概要信息：
+docker info
+
+# 查看Docker总体帮助文档：
+docker --help
+
+# 查看docker具体命令帮助文档：
+docker 具体命令 --help
 ```
-
-查看Docker概要信息：
-
-
 
 ## 镜像命令
 
