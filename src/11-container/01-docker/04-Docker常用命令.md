@@ -61,13 +61,13 @@ docker images
 
 参数：
 
-- `-a`：列出所有镜像（含历史镜像）
+- `-a`：列出所有镜像，含历史镜像
 - `-q`：只显示镜像ID
 - `-f`：过滤
 
 ### 在远程仓库中搜索镜像
 
-（默认取docker hub中搜索）
+默认取docker hub中搜索
 
 ```Shell
 docker search 镜像名称
@@ -127,14 +127,14 @@ docker run ub
 
 如果按下tab时没有自动补全，可以按以下步骤操作：
 
-1. 检查是否安装了bash-completion（命令补全增强包）
+1. 检查是否安装了bash-completion（命令补全增强包）。
 
 ```Shell
 # 检查有 /usr/share/bash-completion/bash_completion 这个文件
 ls /usr/share/bash-completion/bash_completion
 ```
 
-2. 如果有/usr/share/bash-completion目录，但是没有/usr/share/bash-completion/bash_completion文件（centos6为/etc/bash_completion文件），则需要安装bash-completion
+2. 如果有`/usr/share/bash-completion`目录，但是没有`/usr/share/bash-completion/bash_completion`文件（centos6为`/etc/bash_completion`文件），则需要安装bash-completion
 
 ```Shell
 yum -y install bash-completion
