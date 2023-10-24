@@ -37,17 +37,27 @@ systemctl enable docker
 
 ## 帮助类命令
 
+查看Docker版本：
+
 ```Shell
-# 查看Docker版本：
 docker version
+```
 
-# 查看Docker概要信息：
+查看Docker概要信息：
+
+```Shell
 docker info
+```
 
-# 查看Docker总体帮助文档：
+查看Docker总体帮助文档：
+
+```Shell
 docker --help
+```
 
-# 查看docker具体命令帮助文档：
+查看docker具体命令帮助文档：
+
+```Shell
 docker 具体命令 --help
 ```
 
@@ -61,13 +71,13 @@ docker images
 
 参数：
 
-- `-a`：列出所有镜像，含历史镜像
+- `-a`：列出所有镜像（含历史镜像）
 - `-q`：只显示镜像ID
 - `-f`：过滤
 
 ### 在远程仓库中搜索镜像
 
-默认取docker hub中搜索
+（默认取docker hub中搜索）
 
 ```Shell
 docker search 镜像名称
@@ -114,7 +124,7 @@ docker rmi -f $(docker images -qa)
 
 ## 虚悬镜像
 
-仓库名、标签都是<none>的镜像，俗称虚悬镜像（dangling image）。
+仓库名、标签都是`<none>`的镜像，俗称虚悬镜像（dangling image）。
 
 ## 命令自动补全
 
@@ -127,14 +137,14 @@ docker run ub
 
 如果按下tab时没有自动补全，可以按以下步骤操作：
 
-1. 检查是否安装了bash-completion（命令补全增强包）。
+1. 检查是否安装了`bash-completion`（命令补全增强包）
 
 ```Shell
 # 检查有 /usr/share/bash-completion/bash_completion 这个文件
 ls /usr/share/bash-completion/bash_completion
 ```
 
-2. 如果有`/usr/share/bash-completion`目录，但是没有`/usr/share/bash-completion/bash_completion`文件（centos6为`/etc/bash_completion`文件），则需要安装bash-completion
+2. 如果有`/usr/share/bash-completion`目录，但是没有`/usr/share/bash-completion/bash_completion`文件（centos6为`/etc/bash_completion`文件），则需要安装`bash-completion`
 
 ```Shell
 yum -y install bash-completion
@@ -162,7 +172,7 @@ source /usr/share/bash-completion/completions/docker
 docker run ub
 ```
 
-6. 如果有报错，且报错中提示_get_comp_words_by_ref: command not found。说明bash-completion的配置文件没有生效，需要source一下
+6. 如果有报错，且报错中提示`_get_comp_words_by_ref: command not found`。说明`bash-completion`的配置文件没有生效，需要`source`一下
 
 ```Shell
 # 对于centos7，bash-completion安装的是2.x版本，配置文件为/usr/share/bash-completion/bash_completion
