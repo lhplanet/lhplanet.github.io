@@ -56,6 +56,12 @@ show variables like 'character%';
 
 而且因为启动容器时没有配置容器卷映射，当容器意外被删时，数据无法找回。
 
+```shell
+docker ps
+docker exec -it xxx /bin/bash
+mysql -uroot -p
+```
+
 ### 实际应用版 Mysql 5.7安装
 
 启动 Mysql 容器，并配置容器卷映射：

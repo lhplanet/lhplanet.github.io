@@ -30,6 +30,8 @@ sudo yum remove docker \
 
 安装`yum-config-manager`：
 
+（先装gcc相关）
+
 ```Shell
 # yum-util提供yum-config-manager功能 
 sudo yum install -y yum-utils

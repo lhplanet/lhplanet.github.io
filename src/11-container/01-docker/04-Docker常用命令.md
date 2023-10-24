@@ -80,7 +80,7 @@ docker images
 （默认取docker hub中搜索）
 
 ```Shell
-docker search 镜像名称
+docker search [OPTIONS] 镜像名称
 ```
 
 参数：
@@ -108,6 +108,9 @@ docker system df
 
 ```Shell
 docker rmi 镜像名称/ID
+
+# 强制删除
+docker rmi -f 镜像名称/ID
 ```
 
 可以使用空格分隔，删除多个镜像：

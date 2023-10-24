@@ -33,13 +33,13 @@ rootfs（root file system），在bootfs之上，包含的就是典型Linux系�
 
 docker镜像底层层次：
 
-https://cdn.nlark.com/yuque/0/2022/jpeg/12911942/1652093445038-27095471-f01f-4978-a28f-d8e2df893dab.jpeg?x-oss-process=image%2Fresize%2Cw_633%2Climit_0%2Finterlace%2C1
+![](https://lhplanet-1316168555.cos.ap-beijing.myqcloud.com/obsidian/20231024111416.png)
 
 对于一个精简的OS，rootfs可以很小，只需要包括最基本的命令、工具和程序库就可以了，因为底层直接使用Host的Kernel，自己只需要提供rootfs就可以。所以，对于不同的Linux发行版，bootfs基本是一致的，rootfs会有差别，不同的发行版可以共用bootfs。
 
 有差别的rootfs：
 
-https://cdn.nlark.com/yuque/0/2022/jpeg/12911942/1652093452907-392b879e-1f7b-478a-97ae-7c37cb9669b3.jpeg?x-oss-process=image%2Fresize%2Cw_637%2Climit_0%2Finterlace%2C1
+![](https://lhplanet-1316168555.cos.ap-beijing.myqcloud.com/obsidian/20231024111433.png)
 
 ## 镜像分层
 
@@ -58,7 +58,7 @@ CMD ["/bin/bash"] # 容器启动时运行bash
 
 镜像创建过程：
 
-https://cdn.nlark.com/yuque/0/2022/png/12911942/1652093459380-335e0f0e-1213-47d9-a17b-f49734699ef2.png
+![](https://lhplanet-1316168555.cos.ap-beijing.myqcloud.com/obsidian/20231024111442.png)
 
 ## 镜像分层的优势
 
@@ -74,5 +74,5 @@ https://cdn.nlark.com/yuque/0/2022/png/12911942/1652093459380-335e0f0e-1213-47d9
 
 如图：
 
-https://cdn.nlark.com/yuque/0/2022/jpeg/12911942/1652093466220-a1c70673-7ca7-4025-9432-d89152439000.jpeg?x-oss-process=image%2Fresize%2Cw_800%2Climit_0%2Finterlace%2C1
+![](https://lhplanet-1316168555.cos.ap-beijing.myqcloud.com/obsidian/20231024111454.png)
 
