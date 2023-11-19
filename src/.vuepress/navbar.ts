@@ -4,34 +4,61 @@ export default navbar([
   "/",
 
   {
-    text: "Java",
-    prefix: "/01-java/",
+    text: "必备技能",
+    prefix: "/01_skills/",
     children: [
       {
-        text: "JavaSE",
-        link: "01-javase/"
+        text: "Linux",
+        link: "01_linux/"
       },
       {
-        text: "Java 8",
-        link: "02-java8/"
+        text: "Maven基础",
+        link: "02_maven_base/"
+      },
+      {
+        text: "Git",
+        link: "03_git/"
+      },
+    ],
+  },
+
+  {
+    text: "前端",
+    prefix: "/02_front_end/",
+    children: [
+      {
+        text: "HTML",
+        link: "01_html/"
+      },
+      {
+        text: "CSS",
+        link: "02_css/"
+      },
+      {
+        text: "JavaScript",
+        link: "03_javascript/"
+      },
+      {
+        text: "Vue",
+        link: "04_vue/"
       },
     ],
   },
 
   {
     text: "数据库",
-    prefix: "/02-database/",
+    prefix: "/03_database/",
     children: [
       {
         text: "关系型数据库",
         children: [
           {
             text: "MySQL",
-            link: "01-mysql/"
+            link: "01_mysql/"
           },
           {
             text: "JDBC",
-            link: "02-jdbc/"
+            link: "02_jdbc/"
           },
         ],
       },
@@ -40,11 +67,19 @@ export default navbar([
         children: [
           {
             text: "Redis",
-            link: "03-redis/"
+            link: "03_redis/"
           },
           {
             text: "MongoDB",
-            link: "04-mongodb/"
+            link: "04_mongodb/"
+          },
+          {
+            text: "HBase",
+            link: "05_hbase/"
+          },
+          {
+            text: "Neo4j",
+            link: "06_neo4j/"
           },
         ],
       },
@@ -52,128 +87,101 @@ export default navbar([
   },
 
   {
-    text: "前端",
-    prefix: "/03-front-end/",
+    text: "Java",
+    prefix: "/04_java/",
     children: [
       {
-        text: "HTML",
-        link: "01-html/"
+        text: "JavaSE",
+        link: "01_javase/"
       },
       {
-        text: "CSS",
-        link: "02-css/"
-      },
-      {
-        text: "JavaScript",
-        link: "03-javascript/"
-      },
-      {
-        text: "Vue",
-        link: "04-vue/"
+        text: "Java 8",
+        link: "02_java8/"
       },
     ],
   },
 
   {
     text: "JavaWeb",
-    prefix: "/04-javaweb/",
+    prefix: "/05_javaweb/",
     children: [
       {
         text: "jQuery",
-        link: "01-jquery/"
+        link: "01_jquery/"
       },
       {
         text: "XML",
-        link: "02-xml/"
+        link: "02_xml/"
       },
       {
         text: "Tomcat",
-        link: "03-tomcat/"
+        link: "03_tomcat/"
       },
       {
         text: "Servlet",
-        link: "04-servlet/"
+        link: "04_servlet/"
       },
       {
         text: "JSP",
-        link: "05-jsp/"
+        link: "05_jsp/"
       },
       {
         text: "EL",
-        link: "06-el/"
+        link: "06_el/"
       },
       {
         text: "JSTL",
-        link: "07-jstl/"
+        link: "07_jstl/"
       },
       {
         text: "文件上传与下载",
-        link: "08-file-upload-and-download/"
+        link: "08_file_upload_and_download/"
       },
       {
         text: "Cookies",
-        link: "09-cookies/"
+        link: "09_cookies/"
       },
       {
         text: "Session",
-        link: "10-session/"
+        link: "10_session/"
       },
       {
         text: "Filter",
-        link: "11-filter/"
+        link: "11_filter/"
       },
       {
         text: "JSON",
-        link: "12-json/"
+        link: "12_json/"
       },
       {
         text: "AJAX",
-        link: "13-ajax/"
+        link: "13_ajax/"
       },
       {
         text: "i18n",
-        link: "14-i18n/"
-      },
-    ],
-  },
-
-  {
-    text: "必备技能",
-    prefix: "/05-skills/",
-    children: [
-      {
-        text: "Linux",
-        link: "01-linux/"
-      },
-      {
-        text: "Maven基础",
-        link: "02-maven-base/"
-      },
-      {
-        text: "Git",
-        link: "03-git/"
+        link: "14_i18n/"
       },
     ],
   },
 
   {
     text: "Spring框架",
-    prefix: "/06-spring-framework/",
+    prefix: "/06_spring_framework/",
     children: [
       {
         text: "SSM",
         children: [
           {
             text: "MyBatis",
-            link: "01-mybatis/"
+            link: "01_mybatis/"
           },
           {
             text: "Spring",
-            link: "02-spring/"
+            link: "02_spring/"
           },
           {
             text: "SpringMVC",
-            link: "03-springmvc/"
+            link: "03_springmvc/"
           },
         ],
       },
@@ -182,19 +190,19 @@ export default navbar([
         children: [
           {
             text: "Maven进阶",
-            link: "04-maven-advance/"
+            link: "04_maven_advance/"
           },
           {
             text: "SpringBoot",
-            link: "05-springboot/"
+            link: "05_springboot/"
           },
           {
             text: "MyBatisPlus",
-            link: "06-mybatis-plus/"
+            link: "06_mybatis_plus/"
           },
           {
             text: "SpringSecurity",
-            link: "07-spring-security/"
+            link: "07_spring_security/"
           },
         ],
       },
@@ -202,58 +210,152 @@ export default navbar([
   },
 
   {
-    text: "消息队列",
-    prefix: "/07-message-queue/",
+    text: "服务器",
+    prefix: "/07_server/",
     children: [
       {
-        text: "RabbitMQ",
-        link: "01-rabbitmq/"
+        text: "容器",
+        children: [
+          {
+            text: "Docker",
+            link: "01_docker/"
+          },
+          {
+            text: "K8S",
+            link: "02_k8s/"
+          },
+        ],
       },
       {
-        text: "RocketMQ",
-        link: "02-rocketmq/"
+        text: "运维",
+        children: [
+          {
+            text: "Nginx",
+            link: "03_nginx/"
+          },
+          {
+            text: "Netty网络编程",
+            link: "04_netty/"
+          },
+        ],
       },
     ],
   },
-
-  { text: "Nginx", link: "/08-nginx/" },
-
-  { text: "Netty网络编程", link: "/09-netty-network-programming/" },
 
   {
     text: "微服务",
-    prefix: "/10-microservices/",
+    prefix: "/08_microservices/",
     children: [
       {
         text: "Dubbo",
-        link: "01-dubbo/"
+        link: "01_dubbo/"
       },
       {
         text: "SpringCloud",
-        link: "02-springcloud/"
+        link: "02_springcloud/"
       },
       {
         text: "SpringCloudAlibaba",
-        link: "03-springcloudalibaba/"
+        link: "03_springcloudalibaba/"
       },
     ],
   },
 
   {
-    text: "容器",
-    prefix: "/11-container/",
+    text: "中间件",
+    prefix: "/09_middleware/",
     children: [
       {
-        text: "Docker",
-        link: "01-docker/"
+        text: "消息队列中间件",
+        children: [
+          {
+            text: "RabbitMQ",
+            link: "01_rabbitmq/"
+          },
+          {
+            text: "RocketMQ",
+            link: "02_rocketmq/"
+          },
+        ],
+      },
+      // {
+      //   text: "其它中间件",
+      //   children: [
+      //     {
+      //       text: "RabbitMQ",
+      //       link: "03_rabbitmq/"
+      //     },
+      //     {
+      //       text: "RocketMQ",
+      //       link: "02_rocketmq/"
+      //     },
+      //   ],
+      // },
+    ],
+  },
+
+  {
+    text: "大数据",
+    prefix: "/10_big_data/",
+    children: [
+      {
+        text: "爬虫",
+        link: "01_spider/"
       },
       {
-        text: "K8S",
-        link: "02-k8s/"
+        text: "Hadoop",
+        link: "02_hadoop/"
+      },
+      {
+        text: "Zookeeper",
+        link: "03_zookeeper/"
       },
     ],
   },
 
-  { text: "CI/CD", link: "/12-ci-cd/" },
+  {
+    text: "Python",
+    prefix: "/11_python/",
+    children: [
+      {
+        text: "Python基础",
+        link: "01_python_base/"
+      },
+      {
+        text: "Python进阶",
+        link: "02_python_advance/"
+      },
+    ],
+  },
+
+  {
+    text: "C++",
+    prefix: "/12_cpp/",
+    children: [
+      {
+        text: "C++基础",
+        link: "01_cpp_base/"
+      },
+      {
+        text: "C++进阶",
+        link: "02_cpp_advance/"
+      },
+    ],
+  },
+
+  {
+    text: "Rust",
+    prefix: "/13_rust/",
+    children: [
+      {
+        text: "Rust基础",
+        link: "01_rust_base/"
+      },
+      {
+        text: "Rust进阶",
+        link: "02_rust_advance/"
+      },
+    ],
+  },
 
 ]);
